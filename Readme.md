@@ -63,12 +63,11 @@ If we click Test Connection we'll get an error. The simplest solution is to ente
 $ kubectl create clusterrolebinding jenkins-default --clusterrole cluster-admin --serviceaccount=jenkins:default
 ```
 
-**service-account.yml**
-
-[YML](https://github.com/jenkinsci/kubernetes-plugin/blob/master/src/main/kubernetes/service-account.yml)
-
+Another way is to run the next yml:
+[**service-account.yml**](https://github.com/jenkinsci/kubernetes-plugin/blob/master/src/main/kubernetes/service-account.yml)
 
 ![kubernetes config](images/kubernetes-pod-template-1.png)
+
 ![kubernetes config](images/kubernetes-pod-template-2.png)
 
 
